@@ -139,7 +139,7 @@ VisualEffectResource:
       const StripData stripData = GetStripDataFromStripIndex(stripIndex, PARTICLE_PER_STRIP_COUNT);\n\t\tInitStripAttributes(particleIndex,
       attributes, stripData);\n\t\t// TODO Change seed to be sure we're deterministic
       on random with strip\n#endif\n        \n        {\n            SetAttribute_F0142CB9(
-      /*inout */attributes.lifetime, (float)20);\n        }\n        {\n           
+      /*inout */attributes.lifetime, (float)10);\n        }\n        {\n           
       AttributeFromMap_6F6C3099( /*inout */attributes.position, attributes.particleId,
       GetVFXSampler(attributeMap_b, samplerattributeMap_b), float3(0, 0, 0), float3(10,
       5, 1));\n        }\n        {\n            AttributeFromMap_9AAC619( /*inout
@@ -915,7 +915,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 9
           m_Value: 1
         - m_ExpressionIndex: 16
-          m_Value: 20
+          m_Value: 10
       m_Vector2f:
         m_Array:
         - m_ExpressionIndex: 2
@@ -2167,7 +2167,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 20
+      m_SerializableObject: 10
     m_Space: 2147483647
   m_Property:
     name: Lifetime
